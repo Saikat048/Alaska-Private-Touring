@@ -11,3 +11,15 @@
     left: 0;
     opacity: 1; 
 }
+/* .card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px 0;
+} */
+
+/* @media all and (max-width: 768px) {
+    .card-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+    }
+} */
