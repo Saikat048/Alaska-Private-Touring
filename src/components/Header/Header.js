@@ -1,21 +1,23 @@
 import React from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap'; 
+import { Link } from 'react-router-dom';
+import './Header.css'
 
 const Header = () => {
     return (
         <div>
             <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
                 <Container>
-                    <Navbar.Brand href="#home">ALASKA PRIVATE TOURING</Navbar.Brand>
+                    <Navbar.Brand className='alaska fw-bold'>ALASKA PRIVATE TOURING</Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="mx-auto">
-                            <Nav.Link href="#features">Home</Nav.Link>
-                            <Nav.Link href="#pricing">Services</Nav.Link> 
-                            <Nav.Link href="#pricing">About</Nav.Link> 
+                            <Link to="home">Home</Link>
+                            <Link to="services">Services</Link> 
+                            <Link to="about">About</Link> 
                         </Nav>
                         <Nav>
-                            <Nav.Link href="#deets">Log In</Nav.Link> 
+                            <Link to="login">Log In</Link> 
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
