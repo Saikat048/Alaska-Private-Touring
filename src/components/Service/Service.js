@@ -1,5 +1,4 @@
-import React from 'react';
-import { Button, Card } from 'react-bootstrap';
+import React from 'react'; 
 
 const Service = (props) => {
     const { name, img } = props.plase
