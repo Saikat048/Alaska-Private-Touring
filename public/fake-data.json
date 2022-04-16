@@ -1,0 +1,66 @@
+[
+    {
+        "id": 1,
+        "name": "Juneau Icefield Excursion by Helicopter",
+        "img": "https://alaskaprivatetouring.com/wp-content/uploads/2020/08/4h97ZJQw-600x400.jpeg",
+        "duration": "Suggested length: 2.5 hours",
+        "price": "$ 250",
+        "view": "SOLD OUT for 2022. Explore the natural ice formations of Juneau Icefield by helicopter on this guided flightseeing adventure including a scenic flight and a brief landing.  Explore the ice formations with your pilot and guide and stroll along a river of ice plunging downwards between 790 and 4,590 feet."
+    },
+    {
+        "id": 2,
+        "name": "Glacier Bay Flightseeing Tour (Haines)",
+        "img": "https://alaskaprivatetouring.com/wp-content/uploads/2020/10/Glacier-Bay-National-Park-600x400.jpg",
+        "duration": "Suggested length: 1.5 hours",
+        "price": "$ 260",
+        "view": "SOLD OUT for 2022. Check another Alaska National Park off your bucket list with this exclusive 1.5 hour flightseeing tour over Glacier Bay National Park.  Your experienced pilot will highlight the beauty of this special corner of the world as he showcases the ice-covered mountains and glacial features.  Keep an eye out for some of the wildlife that call this protected park ‘home,’ including mountain goats, moose, and bears."
+    },
+    {
+        "id": 3,
+        "name": "Sheldon Chalet",
+        "img": "https://alaskaprivatetouring.com/wp-content/uploads/2020/06/171110-5X0702-600x400.jpg",
+        "duration": "Suggested duration: 5 nights",
+        "price": "$ 250",
+        "view": "Arrive by private helicopter at your exclusive, luxurious mountain retreat at the foot of Denali’s slopes, perched 6,000 feet up and towering over glacier-carved valleys below. Adventure awaits. Glacier trekking, ice caves, Alaskan style sledding. Fine wines and cuisine. 'Experience Grand'."
+    },
+    {
+        "id": 4,
+        "name": "Mendenhall Glacier Canoeing and Trekking",
+        "img": "https://alaskaprivatetouring.com/wp-content/uploads/2020/08/lUnlovYw-600x400.jpeg",
+        "duration": "Suggested length: 6.5 hours",
+        "price": "$ 300",
+        "view": "SOLD OUT for 2022. Paddle your canoe through the calm deep waters of Mendenhall Lake, then hike across the rocky shores with views of Tongass National Forest to reach Juneau’s famous Mendenhall Glacier.  Bald eagles and mountain goats will watch over you as you don your ice spikes and continue your trek along the glacier in search its stunning, natural blue-ice formations."
+    },
+    {
+        "id": 5,
+        "name": "Alaskan Luxury: Coast to Coast",
+        "img": "https://alaskaprivatetouring.com/wp-content/uploads/2020/10/One-of-our-favorite-picnic-spots-600x400.jpg",
+        "duration": "Suggested duration: 15 nights",
+        "price": "$ 500",
+        "view": "This luxurious 2-week Alaska journey takes you deep into the Inside Passage, into the landscapes of the Interior and along the coast, showcasing some of the state’s best highlights and two luxury lodges. Immerse yourself in diverse adventures curated just for you and your travel companions as you enjoy the experiences you most desire. "
+    },
+    {
+        "id": 6,
+        "name": "A Private Cruise Aboard the M/V Sea Mist",
+        "img": "https://alaskaprivatetouring.com/wp-content/uploads/2020/10/qIPjqBnw-600x400.jpeg",
+        "duration": "Suggested duration: 5 nights",
+        "price": "$ 400",
+        "view": "Your own personal cruise into Prince William Sound awaits as you explore its waters in Southcentral Alaska aboard The Sea Mist.  A private yacht charter is the ideal way to explore Alaska for families of all ages. With a maximum capacity of 6 guests, your private yacht will provide access to adventure that larger vessels can’t access. "
+    },
+    {
+        "id": 7,
+        "name": "Trekking on Mendenhall Glacier ",
+        "img": "https://alaskaprivatetouring.com/wp-content/uploads/2020/08/OIPCEig-600x400.jpeg",
+        "duration": "Suggested length: 9 hours",
+        "price": "$ 350",
+        "view": "Experience Juneau’s Mendenhall Glacier on foot on this private, guided Alaska hiking and glacier trekking all-day outdoor adventure.  Follow your private naturalist guide as you hike together through the Tongass National Forest to the face of Mendenhall Glacier. Then grab your ice trekking spikes to launch out on a trek on the white, brown and blue glacial ice flows of Mendenhall Glacier."
+    },
+    {
+        "id": 8,
+        "name": "Iniakuk Lake Wilderness Lodge",
+        "img": "https://alaskaprivatetouring.com/wp-content/uploads/2020/07/Iniakuk-Lodge.jpg",
+        "duration": "Suggested duration: 4 nights",
+        "price": "$ 250",
+        "view": "Built by hand in 1974, Iniakuk Lake Wilderness Lodge offers comfort and solitude in the iconic Brooks Range in Alaska’s Arctic. Your all-inclusive wilderness adventure in the Alaskan bush begins in Fairbanks as you flightsee to Bettles and on to the lodge. This is authentic and pristine Alaska at its best, your own private Alaska just waiting – for YOU."
+    }
+]
