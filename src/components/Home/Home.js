@@ -6,7 +6,7 @@ import Service from '../Service/Service';
 import './Home.css'
 
 const Home = () => {
-    const [plase, setPlase] = useCustomHook();
+    const [place, setplace] = useCustomHook();
     return (
         <div>
             <section>
@@ -52,7 +52,7 @@ const Home = () => {
                 <div className='card-container'>
                     <div className="row g-5 justify-content-center">
                         {
-                            plase.slice(0, 3).map(plase => <Service key={plase.id} plase={plase}></Service>)
+                            place.slice(0, 3).map(place => <Service key={place.id} place={place}></Service>)
                         }
                     </div>
                 </div>
