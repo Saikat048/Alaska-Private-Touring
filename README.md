@@ -1,7 +1,7 @@
 # ALASKA PRIVATE TOURING
 
 Live Web Site  
-## my-assignment-10-27082.web.app
+## https://my-assignment-10-27082.web.app
 
 ## Assalamu Alaikum Admin/Moderator 
 
