@@ -14,7 +14,7 @@ Live Web Site
 
 
 
-Web Site ta create korte ja ja use kora hoyeche...... 
+### Web Site ta create korte ja ja use kora hoyeche...... 
 
-React-Router,Bootstrap, React-Bootstrap, React-Firebase, React-Firebase-Hooks, Toast, etc.
+React-Router,Bootstrap, React-Bootstrap, React-Firebase, React-Firebase-Hooks, React-icons, Toast, etc.
 
