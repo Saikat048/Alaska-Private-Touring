@@ -26,7 +26,7 @@ const Signup = () => {
     const handleFormSubmit = e => {
         e.preventDefault();
         if(password !== confirmPassword){
-            setError('Password does not match')
+            setError('Password did not match')
             return;
         }
         createUserWithEmailAndPassword(email, password)

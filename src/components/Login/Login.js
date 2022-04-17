@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 import { Button, Form } from 'react-bootstrap';
-import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
-import { Link, Navigate, useLocation, useNavigate } from 'react-router-dom';
+import {useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
 
 const Login = () => {
 
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('') 
-    const Navigate = useNavigate();
+    const navigate = useNavigate();
 
     const handleEmailBlur = e => {
         setEmail(e.target.value);
@@ -16,20 +16,22 @@ const Login = () => {
 
     const handlePasswordBlur = e => {
         setPassword(e.target.value);
-        createUserWithEmailAndPassword(email, password);
     }
 
     const handleFormSubmit = e => {
         e.preventDefault()
+        signInWithEmailAndPassword(email, password);
     }
 
-    const [ createUserWithEmailAndPassword, user, loading, error] = useCreateUserWithEmailAndPassword(auth);
+    const [ signInWithEmailAndPassword, user, error] = useSignInWithEmailAndPassword(auth);
+ 
+ 
 
     const location = useLocation();
     const from = location.state?.from?.pathname || "/";
 
-    if (user) {
-        Navigate(from, { replace: true }) 
+    if (user) { 
+        navigate(from, { replace: true }) 
     }
     return (
         <div>
@@ -50,8 +52,8 @@ const Login = () => {
 
                 <Button className='mt-4' variant="primary" type="submit">
                     Log In
-                </Button>
-            </Form>
+                </Button> 
+            </Form> 
         </div>
     );
 };

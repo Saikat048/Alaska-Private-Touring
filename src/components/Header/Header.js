@@ -1,6 +1,6 @@
 import { signOut } from 'firebase/auth';
 import React from 'react';
-import { Container, Nav, Navbar } from 'react-bootstrap';  
+import { Container, Nav, Navbar } from 'react-bootstrap';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
 import CustomLink from '../CustomLink/CustomLink';
@@ -21,17 +21,18 @@ const Header = () => {
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="mx-auto">
                             <CustomLink to="home">Home</CustomLink>
-                            <CustomLink to="services">Services</CustomLink> 
-                            <CustomLink to="about">About</CustomLink> 
+                            <CustomLink to="services">Services</CustomLink>
+                            <CustomLink to="service/:serviceId">Service Detail</CustomLink>
                         </Nav>
                         <Nav>
+                            <CustomLink to="about">About</CustomLink>
                             {
-                                user ?  <CustomLink onClick={handleLogOut} to="login">Log Out</CustomLink> 
-                                :
-                                 <CustomLink to="login">Log In</CustomLink> 
+                                user ? <CustomLink onClick={handleLogOut} to="login">Log Out</CustomLink>
+                                    :
+                                    <CustomLink to="login">Log In</CustomLink>
                             }
-                           
-                           
+
+
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
