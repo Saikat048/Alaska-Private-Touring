@@ -1,3 +1,4 @@
+import { sendEmailVerification } from 'firebase/auth';
 import React, { useState } from 'react';
 import { Button, Form } from 'react-bootstrap';
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
@@ -21,7 +22,7 @@ const Signup = () => {
         setConfirmPassword(e.target.value);
     }
 
-    const [createUserWithEmailAndPassword, user, loading] = useCreateUserWithEmailAndPassword(auth);
+    const [createUserWithEmailAndPassword, user, loading] = useCreateUserWithEmailAndPassword(auth, {sendEmailVerification: true});
 
     const handleFormSubmit = e => {
         e.preventDefault();
@@ -29,8 +30,11 @@ const Signup = () => {
             setError('Password did not match')
             return;
         }
-        createUserWithEmailAndPassword(email, password)
-    }
+        createUserWithEmailAndPassword(email, password);
+        sendEmailVerification();
+    } 
+
+
     if(user){
         navigate('/home')
     }
