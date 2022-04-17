@@ -9,6 +9,8 @@ const Home = () => {
     const [place, setplace] = useCustomHook();
     return (
         <div>
+            {/* cerousel */}
+
             <section>
                 <Carousel>
                     <Carousel.Item interval={1000}>
@@ -46,6 +48,9 @@ const Home = () => {
                     </Carousel.Item>
                 </Carousel>
             </section>
+
+            {/* services  */}
+            
             <section className='container'>
                 <h1 className='text-primary text-center fw-bold my-5'>Services</h1>
 

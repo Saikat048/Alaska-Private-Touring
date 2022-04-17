@@ -13,6 +13,7 @@ const Signup = () => {
     const [error, setError] = useState('');
     const navigate = useNavigate();
 
+    // googleSignIn
 
     const [users, setUsers] = useState()
     const provider = new GoogleAuthProvider(auth);
@@ -32,6 +33,8 @@ const Signup = () => {
     }
 
 
+    // form Sing Up
+
     const handleEmailBlur = e => {
         setEmail(e.target.value);
     }
@@ -43,6 +46,9 @@ const Signup = () => {
     }
     const [createUserWithEmailAndPassword, user, loading] = useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
 
+
+    // form Submit 
+
     const handleFormSubmit = e => {
         e.preventDefault();
         if (password !== confirmPassword) {
@@ -50,6 +56,8 @@ const Signup = () => {
             return;
         }
         createUserWithEmailAndPassword(email, password);
+
+        // emailVerification
         sendEmailVerification();
     }
 
@@ -87,6 +95,9 @@ const Signup = () => {
                     <hr></hr>
                 </div>
             </div>
+
+            {/* google sign in button  */} 
+            
             <Button onClick={googleSignIn} className='d-block mx-auto' variant="primary" type="submit">
                 Sign In With Google
             </Button>

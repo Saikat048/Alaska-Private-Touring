@@ -12,6 +12,9 @@ const Login = () => {
     const [password, setPassword] = useState('') 
     const navigate = useNavigate();
 
+
+    // form log in
+
     const handleEmailBlur = e => {
         setEmail(e.target.value);
     }
@@ -19,6 +22,8 @@ const Login = () => {
     const handlePasswordBlur = e => {
         setPassword(e.target.value);
     }
+
+    // form submit
 
     const handleFormSubmit = e => {
         e.preventDefault()
@@ -29,13 +34,16 @@ const Login = () => {
  
  
 
+    // user location 
+
     const location = useLocation();
     const from = location.state?.from?.pathname || "/";
 
     if (user) { 
         navigate(from, { replace: true }) 
     }
-
+ 
+    // reset password 
 
     const [sendPasswordResetEmail, sending] = useSendPasswordResetEmail( auth );
     const handleForgotPassword = async () => {
@@ -45,6 +53,8 @@ const Login = () => {
     if (sending) {
         return <h1 className='text-center mt-5'>Sending...</h1>;
       }
+
+
     return (
         <div>
             <h1 className='text-primary text-center fw-bold mt-5'>Log In</h1>
@@ -66,6 +76,8 @@ const Login = () => {
                     Log In
                 </Button> 
             </Form> 
+            
+            {/* toast  */}
             <ToastContainer />
         </div>
     );
