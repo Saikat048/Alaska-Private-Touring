@@ -23,6 +23,7 @@ const Header = () => {
                             <CustomLink to="home">Home</CustomLink>
                             <CustomLink to="services">Services</CustomLink>
                             <CustomLink to="service/:serviceId">Service Detail</CustomLink>
+                            <CustomLink to="blogs">Blogs</CustomLink>
                         </Nav>
                         <Nav>
                             <CustomLink to="about">About</CustomLink>

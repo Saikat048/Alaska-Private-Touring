@@ -1,7 +1,7 @@
 import { GoogleAuthProvider, sendEmailVerification, signInWithPopup } from 'firebase/auth';
 import React, { useState } from 'react';
 import { Button, Form } from 'react-bootstrap';
-import { useAuthState, useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
 import './Signup.css'
@@ -12,14 +12,12 @@ const Signup = () => {
     const [confirmPassword, setConfirmPassword] = useState('');
     const [error, setError] = useState('');
     const navigate = useNavigate();
-    
- 
-    const [users, setUsers] = useState()
 
+
+    const [users, setUsers] = useState()
     const provider = new GoogleAuthProvider(auth);
 
-
-    if(users){
+    if (users) {
         navigate('/home')
     }
     const googleSignIn = () => {
@@ -43,7 +41,6 @@ const Signup = () => {
     const handleConfirmPasswordBlur = e => {
         setConfirmPassword(e.target.value);
     }
-
     const [createUserWithEmailAndPassword, user, loading] = useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
 
     const handleFormSubmit = e => {
@@ -63,7 +60,7 @@ const Signup = () => {
     return (
         <div>
             <h2 className='text-primary text-center fw-bold mt-5'>Sign Up</h2>
-            <Form onSubmit={handleFormSubmit} className='w-50 mx-auto border p-5'>
+            <Form onSubmit={handleFormSubmit} className='w-50 mx-auto p-5 pb-0'>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>Email address</Form.Label>
                     <Form.Control onBlur={handleEmailBlur} type="email" placeholder="Enter email" required />
@@ -77,21 +74,19 @@ const Signup = () => {
                 </Form.Group>
                 <p className='text-danger'>{error}</p>
                 <p>Already have an account? <Link to="/login">Please Log In</Link></p>
-                <Button className='mb-5' variant="primary" type="submit">
+                <Button className='mt-3' variant="primary" type="submit">
                     Sign Up
-                </Button>
-                <div className='d-flex w-50 mx-auto my-5'>
-                    <div>
-                        <hr></hr>
-                    </div>
-                    <div>or</div>
-                    <div>
-                        <hr></hr>
-                    </div>
-                </div>
-
-
+                </Button> 
             </Form>
+            <div className='d-flex justify-content-center w-50 mx-auto my-2'>
+                <div>
+                    <hr></hr>
+                </div>
+                <div>or</div>
+                <div>
+                    <hr></hr>
+                </div>
+            </div>
             <Button onClick={googleSignIn} className='d-block mx-auto' variant="primary" type="submit">
                 Sign In With Google
             </Button>

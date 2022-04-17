@@ -10,7 +10,7 @@ const Service = (props) => {
         navigate(`/service/${id}`);
     }
     return (
-        <div className="card me-5  shadow-sm p-3 mb-5 bg-body rounded" style={{ width: "20rem" }}>
+        <div className="card me-5 col-xs-12 col-sm-4 col-md-4 col-lg-4 shadow-sm p-3 mb-5 bg-body rounded" style={{ width: "20rem" }}>
             <img src={img} className="card-img-top" alt="..." />
             <div className="card-body">
                 <h5 className="card-title">{name}</h5>
