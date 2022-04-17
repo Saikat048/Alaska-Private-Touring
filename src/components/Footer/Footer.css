@@ -1,0 +1,33 @@
+
+.footer-container {
+     background: #EAF3FC;
+     padding: 30px 0;
+}
+.footer {  
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+}
+
+.hr { 
+    width: 170px;
+    border: 4px solid red;
+    border-radius: 8px;
+}
+.icon {
+    font-size: 40px; 
+    margin: 10px;
+}
+ 
+
+
+@media all and (max-width: 576px) {
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .footer-child {
+        margin-bottom: 40px;
+    }
+}

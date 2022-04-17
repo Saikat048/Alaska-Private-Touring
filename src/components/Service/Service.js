@@ -2,7 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
 const Service = (props) => { 
-    const { name, img, id} = props.place; 
+    const { name, img, id, duration, price, view} = props.place; 
 
 
     //navigate service detail 
@@ -19,7 +19,9 @@ const Service = (props) => {
             <img src={img} className="card-img-top" alt="..." />
             <div className="card-body">
                 <h5 className="card-title">{name}</h5>
-                <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <p>{duration}</p>
+                <p>Price: {price}</p>
+                <p className="card-text">{view}</p>
             </div>
             <button onClick={() => handleServiceDetail(id)} href="#" className="btn btn-primary mb-1">Go somewhere</button>
         </div>

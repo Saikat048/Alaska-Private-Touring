@@ -14,7 +14,7 @@ const Header = () => {
     }
     return (
         <div>
-            <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+            <Navbar  collapseOnSelect expand="lg" bg="dark" variant="dark">
                 <Container>
                     <Navbar.Brand className='alaska fw-bold'>ALASKA PRIVATE TOURING</Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />

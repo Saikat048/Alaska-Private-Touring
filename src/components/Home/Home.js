@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom';
 import useCustomHook from '../../CustomHook/CustomHook';
 import Service from '../Service/Service';
 import './Home.css' 
+import { BsArrowRight } from 'react-icons/bs';
+import Footer from '../Footer/Footer';
 
 const Home = () => {
     const [place, setplace] = useCustomHook();
@@ -51,7 +53,7 @@ const Home = () => {
 
             {/* services  */}
             
-            <section className='container'>
+            <section className='container mb-5'>
                 <h1 className='text-primary text-center fw-bold my-5'>Services</h1>
 
                 <div className='card-container'>
@@ -62,8 +64,9 @@ const Home = () => {
                     </div>
                 </div>
 
-                <Link className='text-primary text-decoration-none d-block text-center fw-bold mt-5' to="/services">More Services.....</Link>
+                <Link className='text-primary text-decoration-none d-block text-center fw-bold mt-5' to="/services">More Services <span><BsArrowRight></BsArrowRight></span></Link>
             </section>
+            <Footer></Footer>
         </div>
     );
 };

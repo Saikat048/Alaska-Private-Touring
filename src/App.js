@@ -30,8 +30,7 @@ function App() {
         <Route path="/login" element={<Login></Login>}></Route>
         <Route path="/signup" element={<Signup></Signup>}></Route>
         <Route path="/*" element={<Error></Error>}></Route>
-      </Routes>
-      <Footer></Footer>
+      </Routes> 
     </div>
   );
 }
