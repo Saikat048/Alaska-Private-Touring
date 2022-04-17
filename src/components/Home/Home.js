@@ -3,7 +3,7 @@ import { Carousel } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import useCustomHook from '../../CustomHook/CustomHook';
 import Service from '../Service/Service';
-import './Home.css'
+import './Home.css' 
 
 const Home = () => {
     const [place, setplace] = useCustomHook();
@@ -57,7 +57,7 @@ const Home = () => {
                     </div>
                 </div>
 
-                <Link className='text-primary text-decoration-none d-block text-center fw-bold mt-5' to="/services">More Services</Link>
+                <Link className='text-primary text-decoration-none d-block text-center fw-bold mt-5' to="/services">More Services.....</Link>
             </section>
         </div>
     );
