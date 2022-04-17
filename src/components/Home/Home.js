@@ -21,9 +21,10 @@ const Home = () => {
                             src="https://www.travelalaska.com/sites/default/files/2022-01/Haida-GlacierBay-GettyImages-1147753605.jpg"
                             alt="First slide"
                         />
-                        <Carousel.Caption>
-                            <h3>First slide label</h3>
-                            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                        <Carousel.Caption className='carousel'>
+                            <h3 className='welcome'>WELCOME TO YOUR NEXT</h3>
+                            <h1 className='adventure'>ADVENTURE</h1>
+                            <p className='luxury'>Alaska Luxury Escapes. Designed Just For You</p>
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item interval={500}>
@@ -32,9 +33,9 @@ const Home = () => {
                             src="https://alaskaprivatetouring.com/wp-content/uploads/2020/08/GiW_E37g-600x400.jpeg"
                             alt="Second slide"
                         />
-                        <Carousel.Caption>
-                            <h3>Second slide label</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <Carousel.Caption className='carousel'>
+                            <h1 className='adventure'>ALASKA LUXURY TOUR</h1>
+                            <p className='luxury'>This luxurious 2-week Alaska journey takes you deep into the Inside Passage,</p>
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
@@ -43,9 +44,9 @@ const Home = () => {
                             src="https://cleancruising.imgix.net/destination/alaska_gallery1.jpg?auto=format&w=960"
                             alt="Third slide"
                         />
-                        <Carousel.Caption>
-                            <h3>Third slide label</h3>
-                            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                        <Carousel.Caption className='carousel'>
+                            <h1 className='adventure'>ALASKA SELF DRIVE TOUR</h1>
+                            <p className='luxury'>Paddle your canoe through the calm deep waters of Mendenhall Lake</p>
                         </Carousel.Caption>
                     </Carousel.Item>
                 </Carousel>

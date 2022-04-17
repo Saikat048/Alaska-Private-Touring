@@ -10,16 +10,17 @@
     top: 0;
     left: 0;
     opacity: 1; 
+} 
+.carousel {
+    margin-bottom: 170px;
+} 
+.welcome {
+    font-size: 40px;
 }
-/* .card-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px 0;
-} */
-
-/* @media all and (max-width: 768px) {
-    .card-container {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr); 
-    }
-} */
+.adventure {
+    letter-spacing: 2px;
+    font-size: 80px;
+}
+.luxury {
+    font-size: 20px;
+}
