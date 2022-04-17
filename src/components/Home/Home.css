@@ -24,3 +24,19 @@
 .luxury {
     font-size: 20px;
 }
+
+@media all and (max-width: 576px) {
+    .carousel {
+        margin-bottom: 100px;
+    } 
+    .welcome {
+        font-size: 00px;
+    }
+    .adventure {
+        letter-spacing: 1px;
+        font-size: 50px;
+    }
+    .luxury {
+        font-size: 20px;
+    }
+}
