@@ -5,6 +5,7 @@ import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
 import './Signup.css'
+import { BsGoogle } from 'react-icons/bs';
 
 const Signup = () => {
     const [email, setEmail] = useState('');
@@ -102,7 +103,7 @@ const Signup = () => {
             {/* google sign in button  */} 
             
             <Button onClick={googleSignIn} className='d-block mx-auto' variant="primary" type="submit">
-                Sign In With Google
+               <span className='google-icon me-2'><BsGoogle></BsGoogle></span> Sign In With Google
             </Button>
         </div>
     );
