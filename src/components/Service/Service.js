@@ -9,7 +9,7 @@ const Service = (props) => {
 
     const navigate = useNavigate(); 
 
-    const handleServiceDetail = id => {
+    const handleChickout = id => {
         navigate(`/service/${id}`);
     }
 
@@ -23,7 +23,7 @@ const Service = (props) => {
                 <p>Price: {price}</p>
                 <p className="card-text">{view}</p>
             </div>
-            <button onClick={() => handleServiceDetail(id)} href="#" className="btn btn-primary mb-1">Go somewhere</button>
+            <button onClick={() => handleChickout(id)} href="#" className="btn btn-primary mb-1">Chick Out</button>
         </div>
     );
 };

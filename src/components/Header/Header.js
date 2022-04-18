@@ -22,7 +22,7 @@ const Header = () => {
                         <Nav className="mx-auto">
                             <CustomLink to="home">Home</CustomLink>
                             <CustomLink to="services">Services</CustomLink>
-                            <CustomLink to="service/:serviceId">Service Detail</CustomLink>
+                            <CustomLink to="service/:serviceId">Chick Out</CustomLink>
                             <CustomLink to="blogs">Blogs</CustomLink>
                         </Nav>
                         <Nav>

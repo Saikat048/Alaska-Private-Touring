@@ -55,6 +55,9 @@ const Signup = () => {
             setError('Password did not match')
             return;
         }
+        if(password.length <6){
+            setError('Password must be at least 6 characters or more...')
+        }
         createUserWithEmailAndPassword(email, password);
 
         // emailVerification

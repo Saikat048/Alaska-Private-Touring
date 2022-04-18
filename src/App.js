@@ -7,7 +7,7 @@ import Header from './components/Header/Header';
 import Home from './components/Home/Home';
 import Login from './components/Login/Login';
 import RequireAuth from './components/RequierAuth/RequierAuth';
-import ServiceDetail from './components/ServiceDetail/ServiceDetail';
+import Chickout from './components/Chickout/Chickout';
 import Services from './components/Services/Services';
 import Signup from './components/Signup/Signup';
 
@@ -21,7 +21,7 @@ function App() {
         <Route path="/services" element={<Services></Services>}></Route>
         <Route path="/service/:serviceId" element={
           <RequireAuth>
-            <ServiceDetail></ServiceDetail>
+            <Chickout></Chickout>
           </RequireAuth>
         }></Route>
         <Route path="/blogs" element={<Blogs></Blogs>}></Route>

@@ -1,13 +1,12 @@
 import React from 'react';
-import { useParams } from 'react-router-dom'; 
-import Footer from '../Footer/Footer';
-import './ServiceDetail.css'
+import { useParams } from 'react-router-dom';  
+import './Chickout.css'
 
-const ServiceDetail = () => {
+const Chickout = () => {
     const { serviceId } = useParams(); 
     return (
         <div>
-            <h2 className='text-primary text-center fw-bold mt-5'>Service Detail</h2>
+            <h2 className='text-primary text-center fw-bold mt-5'>Chick Out</h2>
             <div className="card  me-5 pt-3" style={{ width: "20rem" }}>
                 <img src={serviceId.img} className="card-img-top" alt="..." />
                 <div className="card-body">
@@ -19,4 +18,4 @@ const ServiceDetail = () => {
     );
 };
 
-export default ServiceDetail;
+export default Chickout;
