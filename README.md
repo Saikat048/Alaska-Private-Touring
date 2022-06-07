@@ -8,8 +8,8 @@ Live Web Site
 - First I am creating an app with cteate react app. I am creating some components. 
 - Setting the router in the App.js file. Creating a header, setting some links in the header. Home page Carousel + Services section + Footer.
 - If the user is logged in then he can go to the service details and if he is not logged in then he will be taken to the login page.
-- User jodi sign up kora na thake ta hole log in page A sign up er link deya ache, sekhane giye email, password diye othoba 'sign in with google' diye ooo sign up korte parbe. Sign up er somoy user email A email verification code jabe tarpor user K tar email ta verify kore nite hobe. User log in er por password vule gele password reset kore nite parbe. 
-- User log in chara home, services, blogs, about pages A jete pabe. Footer section ta shudho home R services section A dekhano hoyeche.
+- If the user has not signed up then there is a link to sign up with email, password or sign in with Google. After signing up, an email verificaction message will be sent to the user's email, then the uset will have to verify his email. If the user forgers hos password, He will be able to reset the password. 
+- Users can go to home, services, blogs page without logging in.
 
 
 
